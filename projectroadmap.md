@@ -13,6 +13,8 @@
 - **Created import statements and created functions that save transactions to a file then load them for later use.**
 - **Created functions that allows user to log their expense categories and amounts. Created function that lets user enter their income amount.**
 - **Created the functions that calculate your total expenses and income.**
+- **Created function that calculates remaining income after expenses are paid**
+- **Created function that summarizes total expenses**
 - [ ] Assess progress on planned and emerging tasks in this file.
 ## Sprint 3
 - [ ] Design a powerpoint slide presenting the budget tracker.
