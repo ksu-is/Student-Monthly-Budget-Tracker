@@ -15,3 +15,17 @@ def save_transactions(transactions):
   with open("transactions.json", "w") as file:
     json.dump(transactions, file, indent=4)
 
+#Function that logs an expense
+def log_expense(transactions):
+  category = input("Please enter an expense category: ")
+  amount = float(input("Now enter the expense amount: "))
+  transactions["expenses"].append({"category": category, "amount": amount})
+  save_transactions(transactions)
+  print("Thank you. Your expense was logged successfully.")
+
+  #Function that logs your income
+  def log_income(transactions):
+    amount = float(input("Please enter the income amount: "))
+    transactions["income"].append(amount)
+    save_transactions(transactions)
+    print("Thank you. Your income was logged successfully.")
