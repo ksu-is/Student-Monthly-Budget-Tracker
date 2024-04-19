@@ -25,7 +25,8 @@ def log_expense(transactions):
 
   #Function that logs your income
   def log_income(transactions):
-    amount = float(input("Please enter the income amount: "))
-    transactions["income"].append(amount)
+    category = input("Please enter an income category: ")
+    amount = float(input("Now enter the income amount: "))
+    transactions["income"].append({"category": category, "amount": amount})
     save_transactions(transactions)
     print("Thank you. Your income was logged successfully.")
