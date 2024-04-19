@@ -4,10 +4,11 @@ from collections import defaultdict
 
 # Function that loads transactions from file
 def load_transactions():
-  if os.path.exists("transactions.json"):
-    with open("transactions.json", "r") as file:
-      return json.load(file)
-  else:
+  try:
+    if os.path.exists("transactions.json"):
+      with open("transactions.json", "r") as file:
+        return json.load(file)
+  except:
     return {"expenses": [], "income": []}
 
 # Function that saves transactions to file
@@ -63,7 +64,7 @@ def main():
     print("3. Analyze Budget")
     print("4. Summary of Expenses")
     print("5. Exit")
-    choice = input("Please enter a menu choice [1-5]")
+    choice = input("Please enter a menu choice [1-5]:")
     if choice == "1":
       log_expense(transactions)
     elif choice == "2":
@@ -77,7 +78,8 @@ def main():
       summarize_expenses(transactions)
     elif choice == "5":
       print("Exiting the program...")
-      break
+      with open("transactions.json", "w") as file:
+        return {"expenses": [], "income": []}
     else:
       print("You entered an invalid choice. Please retry and enter a number between 1 and 5.")
 
