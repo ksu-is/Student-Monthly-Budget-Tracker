@@ -52,3 +52,31 @@ def summarize_expenses(transactions):
   print("\nExpense Summary:")
   for category, amount in expense_categories.items():
     print(f"{category}: {amount}")
+
+#Main function 
+def main():
+  transactions = load_transactions()
+  while True:
+    print("\nStudent Monthly Budget Tracker Menu:")
+    print("1. Log Expense")
+    print("2. Log Income")
+    print("3. Analyze Budget")
+    print("4. Summary of Expenses")
+    print("5. Exit")
+    choice = input("Please enter a menu choice [1-5]")
+    if choice == "1":
+      log_expense(transactions)
+    elif choice == "2":
+      log_income(transactions)
+    elif choice == "3":
+      print("\nBudget Analysis:")
+      print(f"Total Income: {calculate_income(transactions)}")
+      print(f"Total Expenses: {calculate_expenses(transactions)}")
+      print(f"Remaining Income: {calculate_remaining_income(transactions)}")
+    elif choice == "4":
+      summarize_expenses(transactions)
+    elif choice == "5":
+      print("Exiting the program...")
+      break
+    else:
+      print("You entered an invalid choice. Please retry and enter a number between 1 and 5.")
