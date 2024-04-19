@@ -9,7 +9,7 @@
 ## Sprint 2
 - [x] Create a .py file in the repository and begin building the code.
 - **Created as budgettracker.py**
-- [ ] Create at least 6 commits with detailed comments about the changes to the code.
+- [x] Create at least 6 commits with detailed comments about the changes to the code.
 - **Created import statements and created functions that save transactions to a file then load them for later use.**
 - **Created functions that allows user to log their expense categories and amounts. Created function that lets user enter their income amount.**
 - **Created the functions that calculate your total expenses and income.**
@@ -19,6 +19,7 @@
 - **Created the main function that prints the budget menu and allows user to choose a function.**
 - **Used the "name" variable to ensure the program only runs the main function when the file is running directly.**
 - **Fixed issue in the calculating total income function that resulted from adding the category input to the log income function.**
+- **Fixed issue that caused file to store inputs from previous users.**
 - [x] Assess progress on planned and emerging tasks in this file.
 ## Sprint 3
 - [ ] Design a powerpoint slide presenting the budget tracker.
