@@ -16,6 +16,7 @@
 - **Created function that calculates remaining income after expenses are paid.**
 - **Created function that summarizes total expenses.**
 - **Created the main function that prints the budget menu and allows user to choose a function.**
+- **Used the "name" variable to ensure the program only runs the main function when the file is running directly.**
 - [ ] Assess progress on planned and emerging tasks in this file.
 ## Sprint 3
 - [ ] Design a powerpoint slide presenting the budget tracker.
