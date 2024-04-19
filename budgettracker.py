@@ -37,7 +37,7 @@ def calculate_expenses(transactions):
     
 #Function that calculates income
 def calculate_income(transactions):
-  return sum(transactions["income"])
+  return sum(item["amount"] for item in transactions["income"])
 
 #Function that calculates remaining monthly income after expenses
 def calculate_remaining_income(transactions):
