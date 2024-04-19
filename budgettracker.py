@@ -38,3 +38,17 @@ def calculate_expenses(transactions):
 #Function that calculates income
 def calculate_income(transactions):
   return sum(transactions["income"])
+
+#Function that calculates remaining monthly income after expenses
+def calculate_remaining_income(transactions):
+  return calculate_income(transactions) - calculate_expenses(transactions)
+
+#Function that summarizes expenses by category
+def summarize_expenses(transactions):
+  expense_categories = defaultdict(float)
+  for expense in transactions["expenses"]:
+    expense_categories[expense["category"]] += expense["amount"]
+
+  print("\nExpense Summary:")
+  for category, amount in expense_categories.items():
+    print(f"{category}: {amount}")
