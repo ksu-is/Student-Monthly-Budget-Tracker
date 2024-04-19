@@ -11,6 +11,7 @@
 - **Created as budgettracker.py**
 - [ ] Create at least 6 commits with detailed comments about the changes to the code.
 - **Created import statements and created functions that save transactions to a file then load them for later use.**
+- **Created functions that allows user to log their expense categories and amounts. Created function that lets user enter their income amount**
 - [ ] Assess progress on planned and emerging tasks in this file.
 ## Sprint 3
 - [ ] Design a powerpoint slide presenting the budget tracker.
