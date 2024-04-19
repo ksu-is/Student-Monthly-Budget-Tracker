@@ -7,8 +7,10 @@
 - [x] Read the code and attempt to run it yourself.
 - **Code runs with no error and uses import commands and functions to load and save to a file that would be useful when building my code. The expense, income, and calculation functions defined reflect my plans for the program. It lacks my plans to print a message evaluating the result of the users budget. If a poor evaluation is given, student should try again after program automatically exits.**
 ## Sprint 2
-- [ ] Create a .py file in the repository and begin building the code.
+- [x] Create a .py file in the repository and begin building the code.
+- **Created as budgettracker.py**
 - [ ] Create at least 6 commits with detailed comments about the changes to the code.
+- **Created import statements and created functions that save transactions to a file then load them for later use.**
 - [ ] Assess progress on planned and emerging tasks in this file.
 ## Sprint 3
 - [ ] Design a powerpoint slide presenting the budget tracker.
