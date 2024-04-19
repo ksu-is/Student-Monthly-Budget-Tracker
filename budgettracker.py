@@ -80,3 +80,7 @@ def main():
       break
     else:
       print("You entered an invalid choice. Please retry and enter a number between 1 and 5.")
+
+#Run main function only when running this file directly
+if __name__ == "__main__":
+  main()
