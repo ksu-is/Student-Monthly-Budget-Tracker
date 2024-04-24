@@ -49,10 +49,20 @@ def summarize_expenses(transactions):
   expense_categories = defaultdict(float)
   for expense in transactions["expenses"]:
     expense_categories[expense["category"]] += expense["amount"]
-
   print("\nExpense Summary:")
   for category, amount in expense_categories.items():
     print(f"{category}: {amount}")
+
+#Function to remove an expense   
+def remove_expense(transactions):
+  while True:
+    summarize_expenses(transactions)
+    print("Please enter the expense that you would like to remove: ")
+    try:
+      expense_to_remove = int(input("> "))
+      del transactions["expenses"][expense_to_remove - 1]
+    except:
+      print("Invalid input. Please try again.")
 
 #Main function 
 def main():
