@@ -24,7 +24,8 @@
 ## Sprint 3
 - [ ] Design a powerpoint slide presenting the budget tracker.
 - [ ] Add powerpoint slide to README file in repository and submit to D2L.
-- [ ] Continue to make code edits in .py file.
+- [x] Continue to make code edits in .py file.
 - **Added function to remove an expense that was added to the transaction file.**
+- **Revised main() function menu to include remove an expense function.**
 - [ ] Test code for any errors and finalize.
 - [ ] Plan and practice Teams Presentation.
