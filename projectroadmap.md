@@ -22,8 +22,8 @@
 - **Fixed issue that caused file to store inputs from previous users.**
 - [x] Assess progress on planned and emerging tasks in this file.
 ## Sprint 3
-- [ ] Design a powerpoint slide presenting the budget tracker.
-- [ ] Add powerpoint slide to README file in repository and submit to D2L.
+- [x] Design a powerpoint slide presenting the budget tracker.
+- [x] Add powerpoint slide to README file in repository and submit to D2L.
 - [x] Continue to make code edits in .py file.
 - **Added function to remove an expense that was added to the transaction file.**
 - **Revised main() function menu to include remove an expense function.**
