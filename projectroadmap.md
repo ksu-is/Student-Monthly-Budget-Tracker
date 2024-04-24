@@ -23,4 +23,7 @@
 - [x] Assess progress on planned and emerging tasks in this file.
 ## Sprint 3
 - [ ] Design a powerpoint slide presenting the budget tracker.
-- [ ] Add powerpoint slide to README file in repository.
+- [ ] Add powerpoint slide to README file in repository and submit to D2L.
+- [ ] Continue to make code edits in .py file.
+- [ ] Test code for any errors and finalize.
+- [ ] Plan and practice Teams Presentation.
