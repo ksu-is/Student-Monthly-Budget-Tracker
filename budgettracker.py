@@ -39,20 +39,19 @@ def calculate_expenses(transactions):
 #Function that calculates income
 def calculate_income(transactions):
   return sum(item["amount"] for item in transactions["income"])
-
+    
 #Function that calculates remaining monthly income after expenses
 def calculate_remaining_income(transactions):
   return calculate_income(transactions) - calculate_expenses(transactions)
 
 #Function that summarizes expenses by category
 def summarize_expenses(transactions):
-  expense_categories = defaultdict(float)
-  for expense in transactions["expenses"]:
-    expense_categories[expense["category"]] += expense["amount"]
-  print("\nExpense Summary:")
-  for category, amount in expense_categories.items():
-    print(f"{category}: {amount}")
-
+    expense_categories = defaultdict(float)
+    print("\nExpense Summary:")
+    for index, expense in enumerate(transactions["expenses"]):
+        expense_categories[expense["category"]] += expense["amount"]
+        print(f"{index + 1}. {expense['category']}: {expense['amount']}")
+    
 #Function to remove an expense   
 def remove_expense(transactions):
   while True:
@@ -75,13 +74,13 @@ def main():
     print("4. Analyze Budget")
     print("5. Summary of Expenses")
     print("6. Exit")
-    choice = input("Please enter a menu choice [1-5]:")
+    choice = input("Please enter a menu choice [1-5]: ")
     if choice == "1":
       log_income(transactions)
     elif choice == "2":
       log_expense(transactions)
-    elif choice == "3"
-      remove_expenses(transactions)
+    elif choice == "3":
+      remove_expense(transactions)
     elif choice == "4":
       print("\nBudget Analysis:")
       print(f"Total Income: {calculate_income(transactions)}")
@@ -95,7 +94,7 @@ def main():
         return {"expenses": [], "income": []}
     else:
       print("You entered an invalid choice. Please retry and enter a number between 1 and 5.")
-
-#Run main function only when running this file directly
+  
+#Runs main function only when running this file directly
 if __name__ == "__main__":
   main()
