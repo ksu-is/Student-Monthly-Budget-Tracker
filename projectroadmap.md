@@ -27,5 +27,5 @@
 - [x] Continue to make code edits in .py file.
 - **Added function to remove an expense that was added to the transaction file.**
 - **Revised main() function menu to include remove an expense function.**
-- [ ] Test code for any errors and finalize.
-- [ ] Plan and practice Teams Presentation.
+- [x] Test code for any errors and finalize.
+- [x] Plan and practice Teams Presentation.
